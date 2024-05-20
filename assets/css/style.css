@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -9,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: #333;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* Header */
