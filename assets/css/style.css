@@ -25,6 +25,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
+    height: 46px;
     box-shadow: 0 4px 4px #888;
 }
 
@@ -44,8 +45,8 @@ h1 {
 }
 
 #logo-image {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     margin-right: 2px;
 }
 
@@ -53,11 +54,12 @@ h1 {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
-    padding: 0 1rem;
+    padding: 0 1.8rem;
 }
 
 #menu>li {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.8rem; */
+    margin: 0.5rem 0;
 }
 
 nav {
@@ -94,7 +96,7 @@ main {
     background-color: lightgreen;
     /* Take up any space to push footer to the bottom of the page */
     flex: 1 0 auto;
-    margin-top: 42px;
+    margin-top: 46px;
 }
 
 /* Footer */
