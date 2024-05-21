@@ -86,6 +86,7 @@ main {
     background-color: lightgreen;
     /* Take up any space to push footer to the bottom of the page */
     flex: 1 0 auto;
+    margin-top: 74px;
 }
 
 /* Footer */
