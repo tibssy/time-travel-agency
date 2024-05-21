@@ -112,7 +112,7 @@ footer {
         position: relative;
         box-shadow: none;
         width: fit-content;
-        padding-right: 0;
+        padding: 0;
         max-height: none;
         top: 3px;
         overflow: visible;
@@ -131,7 +131,7 @@ footer {
 
     #menu>li {
         margin: 0;
-        padding-left: 1rem;
+        padding: 0.2rem 0.5rem;
     }
 
     .nav-toggle-label {
@@ -150,5 +150,15 @@ footer {
 
     main {
         margin-top: 56px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #menu>li:hover {
+        background-color: #333;
+        color: #fff;
+        border-radius: 6px;
+        transition: 0.5s;
+        box-shadow: 0 2px 4px #888;
     }
 }
