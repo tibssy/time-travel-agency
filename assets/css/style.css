@@ -46,7 +46,6 @@ h1 {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
-    /* margin-left: 6px; */
     padding: 0 1rem;
 }
 
@@ -56,18 +55,20 @@ h1 {
 
 nav {
     position: absolute;
-    display: none;
     background-color: #fff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     top: 100%;
     box-shadow: 0 4px 4px #888;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
 }
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
-    display: block;
+    max-height: 800px;
 }
 
 #nav-toggle {
