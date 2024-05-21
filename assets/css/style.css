@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -19,9 +19,9 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     background-color: #fff;
-    padding: 0 1rem;
+    padding: 0 0.8rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -29,17 +29,24 @@ header {
 }
 
 header a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: inherit;
 }
 
 h1 {
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 300%;
+    font-size: 160%;
     color: #222;
+}
+
+#logo-image {
+    width: 32px;
+    height: 32px;
+    margin-right: 2px;
 }
 
 #menu {
@@ -87,7 +94,7 @@ main {
     background-color: lightgreen;
     /* Take up any space to push footer to the bottom of the page */
     flex: 1 0 auto;
-    margin-top: 74px;
+    margin-top: 42px;
 }
 
 /* Footer */
