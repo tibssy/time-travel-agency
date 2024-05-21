@@ -17,6 +17,9 @@ body {
 
 /* Header */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     background-color: #fff;
     padding: 0 1rem;
     position: fixed;
@@ -43,12 +46,40 @@ h1 {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
-    margin-left: 6px;
+    /* margin-left: 6px; */
+    padding: 0 1rem;
 }
 
 #menu>li {
     margin-bottom: 0.5rem;
 }
+
+nav {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    top: 100%;
+    box-shadow: 0 4px 4px #888;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+
+
 
 /* Main content */
 main {
