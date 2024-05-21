@@ -36,10 +36,6 @@ header a {
     color: inherit;
 }
 
-hr {
-    color: #333;
-}
-
 h1 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
@@ -58,13 +54,12 @@ h1 {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
-    padding: 0 1.8rem;
+    /* padding: 0 1.8rem; */
     border-top: 1px solid #888;
 }
 
 #menu>li {
-    /* margin-bottom: 0.8rem; */
-    margin: 0.5rem 0;
+    margin: 0.5rem 1.8rem;
 }
 
 nav {
@@ -107,4 +102,36 @@ main {
 /* Footer */
 footer {
     background-color: lightsteelblue;
+}
+
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+        max-height: none;
+        top: 0;
+        overflow: visible;
+        transition: none;
+    }
+
+    #menu {
+        display: flex;
+        top: 0;
+        border-top: none;
+    }
+
+    #menu>li {
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
