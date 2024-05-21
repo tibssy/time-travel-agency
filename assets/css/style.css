@@ -36,6 +36,10 @@ header a {
     color: inherit;
 }
 
+hr {
+    color: #333;
+}
+
 h1 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
@@ -55,6 +59,7 @@ h1 {
     letter-spacing: 2px;
     list-style-type: none;
     padding: 0 1.8rem;
+    border-top: 1px solid #888;
 }
 
 #menu>li {
