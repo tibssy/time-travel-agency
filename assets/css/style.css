@@ -222,10 +222,6 @@ footer {
     main {
         margin-top: 56px;
     }
-
-    #hero {
-        height: 600px;
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -235,5 +231,9 @@ footer {
         border-radius: 6px;
         transition: 0.5s;
         box-shadow: 0 2px 4px #333;
+    }
+
+    #hero {
+        height: 600px;
     }
 }
