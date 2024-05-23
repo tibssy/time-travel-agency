@@ -15,6 +15,20 @@ body {
     font-family: "Roboto Condensed", sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 160%; */
+    color: #222;
+}
+
+h1 {
+    font-size: 160%;
+}
+
 /* Header */
 header {
     display: flex;
@@ -34,14 +48,6 @@ header a {
     align-items: center;
     text-decoration: none;
     color: inherit;
-}
-
-h1 {
-    font-family: "Freeman", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 160%;
-    color: #222;
 }
 
 #logo-image {
@@ -106,12 +112,12 @@ main {
 
 
 /* Hero */
-#hero {
-    position: relative;
+#hero_image_container {
+    position: fixed;
     width: 100%;
     height: 400px;
     overflow: hidden;
-    /* background: url('../images/New_York_1930_1.jpg') no-repeat center center / cover; */
+    z-index: -1;
 }
 
 .fade {
@@ -200,6 +206,18 @@ main {
 }
 
 
+/* Hero cover text */
+#hero-cover-text {
+    position: absolute;
+    background: rgba(200, 200, 200, 0.5);
+    backdrop-filter: blur(8px);
+    top: 46px;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px #333;
+}
 
 
 
@@ -257,10 +275,6 @@ main {
         display: none;
     }
 
-    #logo {
-        font-size: 200%;
-    }
-
     #logo-image {
         width: 36px;
         height: 36px;
@@ -269,6 +283,10 @@ main {
 
     main {
         margin-top: 56px;
+    }
+
+    #hero-cover-text {
+        top: 56px;
     }
 }
 
@@ -281,7 +299,7 @@ main {
         box-shadow: 0 2px 4px #333;
     }
 
-    #hero {
+    #hero_image_container {
         height: 600px;
     }
 }
