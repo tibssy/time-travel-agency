@@ -212,7 +212,6 @@ main {
     }
 }
 
-
 /* Hero cover text */
 #hero-cover-text {
     position: absolute;
@@ -225,6 +224,22 @@ main {
     border-radius: 6px;
     box-shadow: 0 4px 4px #333;
 }
+
+.card {
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px #888;
+}
+
+.card h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 5px;
+    margin-bottom: 2px;
+}
+
 
 /* Introduction */
 #Introduction {
@@ -254,9 +269,93 @@ main {
     box-shadow: 0 4px 4px #888;
 }
 
+/* Destenations */
+#destenations {
+    margin: 10px 0;
+}
 
+/* Carousel */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
 
+.carousel {
+    width: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #333;
+    background-color: #1f1f1f;
+}
 
+.carousel-viewport {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 400%;
+}
+
+.carousel-slide {
+    flex: 1 0 25%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    flex: 1;
+    margin: 0 5px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px #333;
+    transition: background 0.5s;
+}
+
+.carousel-button:hover {
+    background-color: #a94503;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#past1:checked~.carousel-viewport {
+    transform: translateX(0%);
+}
+
+#past2:checked~.carousel-viewport {
+    transform: translateX(-25%);
+}
+
+#past3:checked~.carousel-viewport {
+    transform: translateX(-50%);
+}
+
+#past4:checked~.carousel-viewport {
+    transform: translateX(-75%);
+}
 
 
 
