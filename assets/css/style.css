@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
     color: #333;
     font-family: "Roboto Condensed", sans-serif;
+    /* background-color: #e4e4e4; */
 }
 
 h1,
@@ -21,7 +22,6 @@ h3 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-style: normal;
-    /* font-size: 160%; */
     color: #222;
 }
 
@@ -114,16 +114,17 @@ main {
     /* Take up any space to push footer to the bottom of the page */
     flex: 1 0 auto;
     margin-top: 46px;
+    background-color: #ddd;
 }
 
 
 /* Hero */
 #hero_image_container {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .fade {
@@ -224,6 +225,40 @@ main {
     border-radius: 6px;
     box-shadow: 0 4px 4px #333;
 }
+
+/* Introduction */
+#Introduction {
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px #888;
+}
+
+#Introduction h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 5px;
+    margin-bottom: 2px;
+}
+
+#Introduction h3,
+#Introduction p {
+    padding: 6px;
+}
+
+#intro_video {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px #888;
+}
+
+
+
+
+
+
 
 
 
