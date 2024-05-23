@@ -29,6 +29,10 @@ h1 {
     font-size: 160%;
 }
 
+a:focus {
+    outline: 0;
+}
+
 /* Header */
 header {
     display: flex;
@@ -209,7 +213,7 @@ main {
 /* Hero cover text */
 #hero-cover-text {
     position: absolute;
-    background: rgba(200, 200, 200, 0.5);
+    background: rgba(200, 200, 200, 0.6);
     backdrop-filter: blur(8px);
     top: 46px;
     right: 0;
