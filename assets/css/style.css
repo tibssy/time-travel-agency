@@ -29,10 +29,10 @@ h1 {
     font-size: 160%;
 }
 
-a:focus,
-a:active {
+a {
     outline: 0;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Header */
