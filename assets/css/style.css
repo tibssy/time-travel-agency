@@ -247,27 +247,41 @@ main {
 
 /* Introduction */
 
+#introduction,
+#destenations,
+#details {
+    width: 90%;
+    margin: 40px auto;
+}
+
+section>h2 {
+    margin-bottom: 25px;
+    font-size: 200%;
+    border-bottom: 1px solid #333;
+}
+
+article>p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+article>ol {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0 25px;
+}
+
+article li {
+    margin: 10px 0;
+}
+
 #intro_video {
     position: relative;
     width: 100%;
     border-radius: 6px;
     box-shadow: 0 4px 4px #888;
 }
-
-
-
-/* Destenations */
-/* #destenations {
-    margin: 20px auto;
-    width: 90%;
-} */
-
-
-
-/* #destenations h3 {
-    border-bottom: 1px solid #333;
-} */
-
 
 
 
@@ -361,8 +375,6 @@ input[type="radio"] {
 #future4:checked~.carousel-viewport {
     transform: translateX(-75%);
 }
-
-
 
 
 
