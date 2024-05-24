@@ -282,6 +282,7 @@ main {
     justify-content: flex-end;
     position: relative;
     width: 100%;
+    margin: 20px 0;
 }
 
 .carousel {
@@ -341,26 +342,25 @@ input[type="radio"] {
     display: none;
 }
 
-#past1:checked~.carousel-viewport {
+#past1:checked~.carousel-viewport,
+#future1:checked~.carousel-viewport {
     transform: translateX(0%);
 }
 
-#past2:checked~.carousel-viewport {
+#past2:checked~.carousel-viewport,
+#future2:checked~.carousel-viewport {
     transform: translateX(-25%);
 }
 
-#past3:checked~.carousel-viewport {
+#past3:checked~.carousel-viewport,
+#future3:checked~.carousel-viewport {
     transform: translateX(-50%);
 }
 
-#past4:checked~.carousel-viewport {
+#past4:checked~.carousel-viewport,
+#future4:checked~.carousel-viewport {
     transform: translateX(-75%);
 }
-
-
-
-
-
 
 
 
