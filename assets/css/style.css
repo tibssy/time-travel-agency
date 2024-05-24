@@ -16,6 +16,10 @@ body {
     /* background-color: #e4e4e4; */
 }
 
+.text-center {
+    text-align: center;
+}
+
 h1,
 h2,
 h3 {
@@ -242,25 +246,6 @@ main {
 
 
 /* Introduction */
-#Introduction {
-    margin: 10px 10px;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 6px;
-    box-shadow: 0 4px 4px #888;
-}
-
-#Introduction h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    border-bottom: 5px;
-    margin-bottom: 2px;
-}
-
-#Introduction h3,
-#Introduction p {
-    padding: 6px;
-}
 
 #intro_video {
     position: relative;
@@ -269,18 +254,26 @@ main {
     box-shadow: 0 4px 4px #888;
 }
 
+
+
 /* Destenations */
-#destenations {
-    margin: 10px 0;
-}
+/* #destenations {
+    margin: 20px auto;
+    width: 90%;
+} */
 
-.destenation-text {
-    padding: 0 20px;
-}
 
-.destenation-text h3 {
-    margin: 10px 0 0 0;
-}
+
+/* #destenations h3 {
+    border-bottom: 1px solid #333;
+} */
+
+
+
+
+
+
+
 
 /* Carousel */
 .carousel-container {
@@ -294,17 +287,17 @@ main {
 }
 
 .carousel {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0 4px 8px #333;
     background-color: #1f1f1f;
 }
 
 .carousel-viewport {
     display: flex;
-    transition: transform 0.5s ease;
     width: 400%;
+    transition: transform 0.5s ease;
 }
 
 .carousel-slide {
@@ -320,12 +313,11 @@ main {
 
 .carousel-controls {
     position: absolute;
-    bottom: 10px;
     display: flex;
+    bottom: 5px;
     justify-content: space-between;
-    width: 90%;
-    padding: 0 10px;
-    box-sizing: border-box;
+    width: 100%;
+    /* padding: 0 10px; */
 }
 
 .carousel-button {
@@ -337,7 +329,7 @@ main {
     margin: 0 5px;
     height: 30px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 4px;
     box-shadow: 0 4px 8px #333;
     transition: background 0.5s;
 }
@@ -369,6 +361,20 @@ input[type="radio"] {
 #future4:checked~.carousel-viewport {
     transform: translateX(-75%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Footer */
