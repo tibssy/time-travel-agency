@@ -245,13 +245,19 @@ main {
 }
 
 
-/* Introduction */
+/* Main Content */
 
 #introduction,
 #destenations,
 #guide {
     width: 90%;
+    max-width: 600px;
     margin: 40px auto;
+}
+
+#introduction article,
+#destenations article {
+    margin: 15px 0;
 }
 
 section>h2 {
@@ -262,7 +268,6 @@ section>h2 {
 
 article>p {
     margin-top: 5px;
-    margin-bottom: 15px;
     padding: 0 5px;
 }
 
@@ -284,20 +289,16 @@ article li {
 }
 
 
-
-
-
-
-
 /* Carousel */
 .carousel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     position: relative;
     width: 100%;
-    margin: 20px 0;
+    margin-top: 15px;
+    margin-bottom: -10px;
 }
 
 .carousel {
@@ -326,9 +327,9 @@ article li {
 }
 
 .carousel-controls {
-    position: absolute;
+    position: relative;
     display: flex;
-    bottom: 5px;
+    bottom: 30px;
     justify-content: space-between;
     width: 100%;
     /* padding: 0 10px; */
@@ -341,7 +342,7 @@ article li {
     background-color: #eee;
     flex: 1;
     margin: 0 5px;
-    height: 30px;
+    height: 25px;
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 4px 8px #333;
@@ -375,18 +376,6 @@ input[type="radio"] {
 #future4:checked~.carousel-viewport {
     transform: translateX(-75%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer */
@@ -455,6 +444,7 @@ input[type="radio"] {
     }
 }
 
+/* Large devices (laptops and desktops, 992px) */
 @media screen and (min-width: 992px) {
     #menu>li:hover {
         background-color: #333;
@@ -466,5 +456,36 @@ input[type="radio"] {
 
     #hero_image_container {
         height: 600px;
+    }
+
+}
+
+/* Extra Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 1200px) {
+
+    #introduction,
+    #destenations,
+    #guide {
+        width: 90%;
+        max-width: none;
+    }
+
+    #destenation-container>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #future {
+        flex-direction: row-reverse;
+        border-top: 1px solid #333;
+    }
+
+    .carousel-container {
+        width: 49%;
+    }
+
+    #destenation-container article {
+        width: 49%;
     }
 }
