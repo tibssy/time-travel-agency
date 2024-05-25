@@ -251,7 +251,7 @@ main {
 #destenations,
 #guide {
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 40px auto;
 }
 
@@ -458,14 +458,25 @@ input[type="radio"] {
         height: 600px;
     }
 
+
+    #introduction,
+    #destenations,
+    #guide {
+        max-width: 800px;
+    }
+
+
 }
 
 /* Extra Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
 
     #introduction,
-    #destenations,
     #guide {
+        max-width: 1400px;
+    }
+
+    #destenations {
         width: 90%;
         max-width: none;
     }
