@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-primary: #f8f5f1;
+    --bg-primary-transparent: rgba(248, 245, 241, 0.6);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -48,7 +53,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--bg-primary);
     padding: 0 0.8rem;
     position: fixed;
     z-index: 99;
@@ -91,7 +96,7 @@ header a {
 
 nav {
     position: absolute;
-    background-color: #fff;
+    background-color: var(--bg-primary);
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -121,7 +126,7 @@ nav {
 main {
     flex: 1 0 auto;
     margin-top: 46px;
-    background-color: #ddd;
+    background-color: var(--bg-primary);
 }
 
 
@@ -221,8 +226,9 @@ main {
 /* Hero cover text */
 #hero-cover-text {
     position: absolute;
-    background: rgba(200, 200, 200, 0.6);
+    background: var(--bg-primary-transparent);
     backdrop-filter: blur(8px);
+    border: 1px solid #333;
     top: 46px;
     right: 0;
     margin: 10px;
@@ -327,7 +333,9 @@ article li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eee;
+    background-color: var(--bg-primary-transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid #333;
     flex: 1;
     margin: 0 5px;
     height: 25px;
@@ -338,7 +346,7 @@ article li {
 }
 
 .carousel-button:hover {
-    background-color: #a94503;
+    background-color: var(--bg-primary);
 }
 
 input[type="radio"] {
@@ -377,7 +385,7 @@ input[type="radio"] {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: #fda;
+    background-color: var(--bg-primary);
     border-radius: 12px;
     padding: 10px;
     box-shadow: 0 4px 4px #888;
@@ -391,6 +399,14 @@ input[type="radio"] {
 
 .card>p {
     width: 65%;
+}
+
+
+/* Review Page */
+#review {
+    background: url("../images/review/review_background.webp") no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
 }
 
 
