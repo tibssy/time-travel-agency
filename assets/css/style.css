@@ -459,23 +459,6 @@ input[type="radio"] {
     }
 
 
-    #introduction,
-    #destenations,
-    #guide {
-        max-width: 800px;
-    }
-
-
-}
-
-/* Extra Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 1200px) {
-
-    #introduction,
-    #guide {
-        max-width: 1400px;
-    }
-
     #destenations {
         width: 90%;
         max-width: none;
@@ -499,4 +482,16 @@ input[type="radio"] {
     #destenation-container article {
         width: 49%;
     }
+
+
+}
+
+/* Extra Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 1200px) {
+
+    #introduction,
+    #guide {
+        max-width: 1400px;
+    }
+
 }
