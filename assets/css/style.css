@@ -20,6 +20,10 @@ body {
     text-align: center;
 }
 
+.underline {
+    border-bottom: 1px solid #333;
+}
+
 h1,
 h2,
 h3 {
@@ -115,7 +119,6 @@ nav {
 
 /* Main content */
 main {
-    /* Take up any space to push footer to the bottom of the page */
     flex: 1 0 auto;
     margin-top: 46px;
     background-color: #ddd;
@@ -128,7 +131,6 @@ main {
     width: 100%;
     height: 400px;
     overflow: hidden;
-    /* z-index: -1; */
 }
 
 .fade {
@@ -229,27 +231,13 @@ main {
     box-shadow: 0 4px 4px #333;
 }
 
-.card {
-    margin: 10px 10px;
-    padding: 10px;
-    background-color: #fafafa;
-    border-radius: 6px;
-    box-shadow: 0 4px 4px #888;
-}
 
-.card h2 {
-    text-align: center;
-    letter-spacing: 2px;
-    border-bottom: 5px;
-    margin-bottom: 2px;
-}
-
-
-/* Main Content */
+/* Sections */
 
 #introduction,
 #destenations,
-#guide {
+#guide,
+#testimonial {
     width: 90%;
     max-width: 600px;
     margin: 40px auto;
@@ -263,7 +251,6 @@ main {
 section>h2 {
     margin-bottom: 25px;
     font-size: 200%;
-    border-bottom: 1px solid #333;
 }
 
 article>p {
@@ -378,6 +365,35 @@ input[type="radio"] {
     transform: translateX(-75%);
 }
 
+/* Testimonial */
+#testimonial>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #fda;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 4px #888;
+}
+
+.card>img {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.card>p {
+    width: 65%;
+}
+
+
 
 /* Footer */
 #social-networks {
@@ -447,6 +463,21 @@ input[type="radio"] {
     .carousel {
         aspect-ratio: 16 / 9;
     }
+
+
+    #testimonial {
+        max-width: none;
+    }
+
+    #testimonial>div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 48%;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px) */
@@ -505,4 +536,7 @@ input[type="radio"] {
         max-width: 1400px;
     }
 
+    .card {
+        flex: 0 0 30%;
+    }
 }
