@@ -251,7 +251,7 @@ main {
 #destenations,
 #guide {
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     margin: 40px auto;
 }
 
@@ -307,6 +307,7 @@ article li {
     border-radius: 6px;
     box-shadow: 0 4px 8px #333;
     background-color: #1f1f1f;
+    aspect-ratio: 16 / 9;
 }
 
 .carousel-viewport {
@@ -458,6 +459,10 @@ input[type="radio"] {
         height: 600px;
     }
 
+    #introduction,
+    #guide {
+        max-width: 900px;
+    }
 
     #destenations {
         width: 90%;
@@ -483,7 +488,9 @@ input[type="radio"] {
         width: 49%;
     }
 
-
+    .carousel {
+        aspect-ratio: 4 / 3;
+    }
 }
 
 /* Extra Large devices (laptops and desktops, 992px and up) */
