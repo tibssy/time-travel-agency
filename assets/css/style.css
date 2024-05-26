@@ -404,20 +404,19 @@ input[type="radio"] {
     width: 65%;
 }
 
-
 /* Review Page Content */
-#user-container {
+#review-main {
     background: url("../images/review/review_background.webp") no-repeat center center / cover;
     padding: 20px;
 }
 
 
-#review,
+#user-review,
 #user-photos {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -464,10 +463,6 @@ input[type="radio"] {
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow);
 }
-
-
-
-
 
 /* Footer */
 #social-networks {
@@ -550,6 +545,17 @@ input[type="radio"] {
     }
 
     .card {
+        flex: 0 0 48%;
+    }
+
+    #user-review,
+    #user-photos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .review-card {
         flex: 0 0 48%;
     }
 }
