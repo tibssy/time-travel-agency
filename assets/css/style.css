@@ -410,15 +410,14 @@ input[type="radio"] {
     padding: 20px;
 }
 
-
 #user-review,
 #user-photos {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .review-card {
@@ -463,6 +462,16 @@ input[type="radio"] {
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow);
 }
+
+
+/* Booking Page Content */
+#booking {
+    background: url("../images/booking/time_machine.webp") no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
 
 /* Footer */
 #social-networks {
@@ -605,6 +614,22 @@ input[type="radio"] {
 
     .carousel {
         aspect-ratio: 4 / 3;
+    }
+
+    .review-card:hover,
+    #user-photos img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: 0 8px 8px #333;
+    }
+
+    .review-card,
+    #user-photos img {
+        transition: 0.5s;
+    }
+
+    #review-main {
+        padding: 40px;
     }
 }
 
