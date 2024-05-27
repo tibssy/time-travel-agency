@@ -275,6 +275,7 @@ main {
     padding: 10px;
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
+    z-index: 97;
 }
 
 
