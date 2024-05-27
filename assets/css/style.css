@@ -144,6 +144,7 @@ nav {
     transition: max-height 0.6s;
     margin: 10px auto;
     border-radius: var(--border-radius-large);
+    z-index: 98;
 }
 
 /* Nav toggle */
@@ -277,8 +278,7 @@ main {
 }
 
 
-/* Sections */
-
+/* Main Page Content */
 #introduction,
 #destenations,
 #guide,
@@ -369,7 +369,6 @@ article li {
     bottom: 30px;
     justify-content: space-between;
     width: 100%;
-    /* padding: 0 10px; */
 }
 
 .carousel-button {
@@ -380,7 +379,7 @@ article li {
     background-color: var(--background-transparent);
     backdrop-filter: blur(12px);
     flex: 1;
-    margin: 0 5px;
+    margin: auto 3px;
     height: 25px;
     cursor: pointer;
     border-radius: var(--border-radius-normal);
