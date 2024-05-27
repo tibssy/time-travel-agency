@@ -144,7 +144,6 @@ nav {
     transition: max-height 0.6s;
     margin: 10px auto;
     border-radius: var(--border-radius-large);
-    z-index: 98;
 }
 
 /* Nav toggle */
@@ -268,14 +267,13 @@ main {
 #hero-cover-text {
     position: absolute;
     background: var(--background-transparent);
-    backdrop-filter: blur(12px);
+    /* backdrop-filter: blur(12px); */
     top: 46px;
     right: 0;
     margin: 20px;
     padding: 10px;
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
-    z-index: 97;
 }
 
 
