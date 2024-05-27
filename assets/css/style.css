@@ -333,6 +333,11 @@ article li {
     margin-bottom: -10px;
 }
 
+
+.destenation-text p {
+    margin-bottom: 10px;
+}
+
 .carousel {
     width: 100%;
     overflow: hidden;
