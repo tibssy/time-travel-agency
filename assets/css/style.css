@@ -9,37 +9,37 @@
 
 :root {
     /* Material Color */
-    --accent: #1c4958;
-    --primary: #5dd4fc;
-    --on-primary: #003544;
-    --primary-container: #004d61;
-    --on-primary-container: #b8eaff;
-    --secondary: #b3cad5;
-    --on-secondary: #1e333c;
-    --secondary-container: #344a52;
-    --on-secondary-container: #cfe6f1;
-    --tertiary: #c3c3eb;
-    --on-tertiary: #2c2d4d;
-    --tertiary-container: #434465;
-    --on-tertiary-container: #e1e0ff;
+    --primary: #00e1ae;
+    --on-primary: #003829;
+    --primary-container: #00513d;
+    --on-primary-container: #46fec9;
+    --secondary: #b2ccc0;
+    --on-secondary: #1e352c;
+    --secondary-container: #344c42;
+    --on-secondary-container: #cee9dc;
+    --tertiary: #a7cce1;
+    --on-tertiary: #0b3445;
+    --tertiary-container: #264b5d;
+    --on-tertiary-container: #c3e8fe;
     --error: #ffb4ab;
     --on-error: #690005;
     --error-container: #93000a;
     --on-error-container: #ffb4ab;
-    --background: #191c1d;
-    --background-transparent: #191c1d88;
-    --on-background: #e1e3e4;
-    --surface: #191c1d;
-    --on-surface: #e1e3e4;
-    --surface-variant: #40484c;
-    --on-surface-variant: #bfc8cc;
-    --outline: #8a9296;
-    --outline-variant: #40484c;
+    --background: #191c1b;
+    --background-transparent: #191c1b99;
+    --on-background: #e1e3e0;
+    --surface: #191c1b;
+    --on-surface: #e1e3e0;
+    --surface-variant: #404944;
+    --on-surface-variant: #bfc9c3;
+    --outline: #89938d;
+    --outline-variant: #404944;
     --shadow: #000000;
     --scrim: #000000;
-    --inverse-surface: #e1e3e4;
-    --inverse-on-surface: #2e3132;
-    --inverse-primary: #006780;
+    --inverse-surface: #e1e3e0;
+    --inverse-on-surface: #2e312f;
+    --inverse-primary: #006c52;
+
 
 
     /* Other variables */
@@ -90,9 +90,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: var(--background); */
     background-color: var(--background-transparent);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
     padding: 0 0.8rem;
     position: fixed;
     z-index: 99;
@@ -118,7 +117,6 @@ header a {
     font-size: 110%;
     letter-spacing: 2px;
     list-style-type: none;
-    /* border-top: 1px solid #888; */
 }
 
 #menu>li {
@@ -128,7 +126,7 @@ header a {
 
 .active {
     background-color: var(--primary);
-    color: var(--inverse-primary);
+    color: var(--inverse-on-surface);
     border-radius: var(--border-radius-normal);
     box-shadow: var(--box-shadow-normal);
 }
@@ -136,14 +134,14 @@ header a {
 nav {
     position: absolute;
     background-color: var(--background-transparent);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
     width: 96%;
     padding: 0 0.5rem;
     top: 100%;
     box-shadow: var(--box-shadow-large);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease;
+    transition: max-height 0.6s;
     margin: 10px auto;
     border-radius: var(--border-radius-large);
 }
@@ -269,11 +267,10 @@ main {
 #hero-cover-text {
     position: absolute;
     background: var(--background-transparent);
-    backdrop-filter: blur(8px);
-    border: 1px solid #333;
+    backdrop-filter: blur(12px);
     top: 46px;
     right: 0;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
@@ -374,20 +371,22 @@ article li {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 90%;
     background-color: var(--background-transparent);
-    backdrop-filter: blur(8px);
-    border: 1px solid #333;
+    backdrop-filter: blur(12px);
     flex: 1;
     margin: 0 5px;
     height: 25px;
     cursor: pointer;
     border-radius: var(--border-radius-normal);
     box-shadow: var(--box-shadow-normal);
-    transition: background 0.5s;
+    transition: 0.5s;
 }
 
 .carousel-button:hover {
-    background-color: var(--accent);
+    background-color: var(--primary);
+    color: var(--inverse-on-surface);
+    transition: 0.5s;
 }
 
 input[type="radio"] {
@@ -535,6 +534,7 @@ input[type="radio"] {
     nav {
         position: relative;
         background-color: #0000;
+        backdrop-filter: none;
         box-shadow: none;
         max-height: none;
         transition: none;
@@ -556,7 +556,6 @@ input[type="radio"] {
     #menu {
         display: flex;
         top: 0;
-        border-top: none;
     }
 
     #menu>li {
@@ -615,9 +614,19 @@ input[type="radio"] {
 
 /* Large devices (laptops and desktops, 992px) */
 @media screen and (min-width: 992px) {
+
+    header:hover {
+        background-color: var(--background);
+        transition: 0.5s;
+    }
+
+    header {
+        transition: 0.5s;
+    }
+
     #menu>li:hover {
-        background-color: var(--accent);
-        color: var(--inverse-surface);
+        background-color: var(--primary);
+        color: var(--inverse-on-surface);
         border-radius: var(--border-radius-normal);
         transition: 0.5s;
         box-shadow: var(--box-shadow-large);
