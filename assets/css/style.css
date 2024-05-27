@@ -484,7 +484,9 @@ input[type="radio"] {
     box-sizing: border-box;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
     outline: 1px solid var(--on-primary-container);
 }
 
