@@ -63,7 +63,7 @@ body {
 }
 
 .underline {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--inverse-surface);
 }
 
 h1,
@@ -443,8 +443,7 @@ input[type="radio"] {
 
 /* Review Page Content */
 #review-main {
-    /* background-image: linear-gradient(var(--background), var(--surface-variant)); */
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 #user-review,
@@ -454,7 +453,7 @@ input[type="radio"] {
     gap: 30px;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .review-card {
@@ -475,13 +474,14 @@ input[type="radio"] {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 8px 15px;
 }
 
 .card-content .username {
-    font-size: 14px;
+    font-size: 120%;
     color: var(--on-surface);
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--inverse-surface);
     font-weight: bold;
 }
 
@@ -654,7 +654,7 @@ input[type="radio"] {
 
     #future {
         flex-direction: row-reverse;
-        border-top: 1px solid #333;
+        border-top: 1px solid var(--inverse-surface);
     }
 
     .carousel-container {
