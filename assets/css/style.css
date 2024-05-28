@@ -58,6 +58,7 @@ body {
     min-height: 100vh;
     color: var(--on-background);
     font-family: "Roboto Condensed", sans-serif;
+    font-weight: 360;
     background-color: var(--background);
 }
 
@@ -77,8 +78,8 @@ h1 {
 
 p {
     line-height: 1.5rem;
-    font-size: large;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    /* letter-spacing: 1px; */
 }
 
 
