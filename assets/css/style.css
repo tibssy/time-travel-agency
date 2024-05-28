@@ -80,6 +80,7 @@ p {
     color: var(--on-background);
 }
 
+
 section>h2 {
     font-size: 200%;
     text-align: center;
@@ -109,8 +110,27 @@ article li {
     margin: 10px 0;
 }
 
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: var(--border-radius-normal);
+}
 
+button {
+    background-color: var(--on-surface);
+    color: var(--inverse-on-surface);
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius-normal);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.5s;
+}
 
+button:hover {
+    background-color: var(--primary);
+}
 
 /* Form */
 form label {
@@ -144,6 +164,7 @@ form textarea {
     height: 100px;
 }
 
+input[type="checkbox"],
 input[type="radio"] {
     display: none;
 }
@@ -216,14 +237,10 @@ nav {
     backdrop-filter: blur(12px);
     filter: opacity(0);
     scale: 0.6;
-    transition: 0.4s;
+    transition: 0.5s;
     z-index: -2;
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-large);
-}
-
-#nav-toggle {
-    display: none;
 }
 
 .nav-toggle-label {
@@ -259,8 +276,17 @@ nav {
 main {
     flex: 1 0 auto;
     margin-top: 46px;
-    /* background-color: var(--background); */
     background-image: linear-gradient(var(--background), var(--surface-variant));
+}
+
+#introduction,
+#destenations,
+#guide,
+#testimonial,
+#booking {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 
@@ -370,17 +396,6 @@ main {
     box-shadow: var(--box-shadow-normal);
 }
 
-
-/* Main -> Introduction + Destenations + Guide */
-#introduction,
-#destenations,
-#guide,
-#testimonial {
-    width: 90%;
-    max-width: 600px;
-    margin: 40px auto;
-}
-
 #intro_video {
     position: relative;
     width: 100%;
@@ -456,13 +471,12 @@ main {
     cursor: pointer;
     border-radius: var(--border-radius-normal);
     box-shadow: var(--box-shadow-normal);
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .carousel-button:hover {
     background-color: var(--primary);
     color: var(--inverse-on-surface);
-    transition: 0.5s;
 }
 
 #past1:checked~.carousel-viewport,
@@ -513,24 +527,17 @@ main {
     width: 65%;
 }
 
-/* Booking Page Content */
-#booking {
+/* Main -> Booking */
+#booking-main {
     background: url("../images/time_machine_1920x1080.webp") no-repeat center center / cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
 }
 
-
-#booking-form {
+#booking {
     background-color: var(--background-transparent);
     backdrop-filter: blur(12px);
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
     padding: 20px;
-    width: 100%;
-    max-width: 800px;
 }
 
 .booking-form-group,
@@ -538,29 +545,6 @@ main {
     margin-bottom: 15px;
 }
 
-
-
-
-iframe {
-    width: 100%;
-    height: 400px;
-    border-radius: var(--border-radius-normal);
-}
-
-button {
-    background-color: var(--on-surface);
-    color: var(--inverse-on-surface);
-    width: 100%;
-    padding: 10px 15px;
-    border: none;
-    border-radius: var(--border-radius-normal);
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-button:hover {
-    background-color: var(--primary);
-}
 
 
 /* Review Page Content */
@@ -769,7 +753,6 @@ button:hover {
 
     header:hover {
         background-color: var(--background);
-        transition: 0.5s;
     }
 
     header {
@@ -839,7 +822,7 @@ button:hover {
     }
 
 
-    #booking {
+    #booking-main {
         background: url("../images/time_machine_3072x1728.webp") no-repeat center center / cover;
     }
 }
