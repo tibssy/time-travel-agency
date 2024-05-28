@@ -597,7 +597,8 @@ main {
     width: 100%;
     max-width: 600px;
     height: auto;
-    display: block;
+    overflow: hidden;
+    /* display: block; */
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
 }
@@ -734,14 +735,14 @@ main {
 
     #user-review,
     #user-photos {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .review-card,
     #user-photos img {
-        flex: 0 0 46%;
+        max-width: 300px;
+        flex: 0 0 45%;
     }
 }
 
