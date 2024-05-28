@@ -87,29 +87,28 @@ a {
 }
 
 /* Header */
+header::before,
+header {
+    position: fixed;
+    width: 100%;
+    height: 46px;
+}
+
+header::before {
+    content: '';
+    backdrop-filter: blur(12px);
+    left: 0;
+    z-index: -1;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: var(--background-transparent);
-    backdrop-filter: blur(12px); */
-    padding: 0 0.8rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    height: 46px;
-    /* box-shadow: var(--box-shadow-normal); */
-}
-
-header>div {
-    position: absolute;
     background-color: var(--background-transparent);
-    backdrop-filter: blur(12px);
-    left: 0;
-    width: 100%;
-    height: 46px;
-    box-shadow: var(--box-shadow-normal);
-    z-index: -1;
+    padding: 0 0.8rem;
+    z-index: 99;
+    box-shadow: var(--box-shadow-large);
 }
 
 header a {
@@ -627,8 +626,7 @@ button:hover {
         top: 0;
     }
 
-    header,
-    header>div {
+    header {
         height: 56px;
     }
 
