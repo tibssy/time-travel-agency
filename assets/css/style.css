@@ -50,6 +50,8 @@
     --box-shadow-large: 0 4px 8px var(--shadow);
 }
 
+
+/* Body */
 body {
     display: flex;
     flex-direction: column;
@@ -59,14 +61,7 @@ body {
     background-color: var(--background);
 }
 
-.text-center {
-    text-align: center;
-}
-
-.underline {
-    border-bottom: 1px solid var(--inverse-surface);
-}
-
+/* Text */
 h1,
 h2,
 h3 {
@@ -85,6 +80,63 @@ a {
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.underline {
+    border-bottom: 1px solid var(--inverse-surface);
+}
+
+
+/* Form */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--on-primary-container);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--background-transparent);
+    color: var(--on-primary-container);
+    border: 1px solid var(--primary);
+    border-radius: var(--border-radius-normal);
+    box-sizing: border-box;
+}
+
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 1px solid var(--on-primary-container);
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Header */
 header::before,
@@ -486,43 +538,8 @@ input[type="radio"] {
     margin-bottom: 15px;
 }
 
-.booking-form-group label,
-.contact-form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: var(--on-primary-container);
-}
 
-.booking-form-group input,
-.contact-form-group input,
-.booking-form-group select,
-.contact-form-group select,
-.booking-form-group textarea,
-.contact-form-group textarea {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--background-transparent);
-    color: var(--on-primary-container);
-    border: 1px solid var(--primary);
-    border-radius: var(--border-radius-normal);
-    box-sizing: border-box;
-}
 
-.booking-form-group input:focus,
-.contact-form-group input:focus,
-.booking-form-group select:focus,
-.contact-form-group select:focus,
-.booking-form-group textarea:focus,
-.contact-form-group textarea:focus {
-    outline: 1px solid var(--on-primary-container);
-}
-
-.booking-form-group textarea,
-.contact-form-group textarea {
-    resize: vertical;
-    height: 100px;
-}
 
 iframe {
     width: 100%;
