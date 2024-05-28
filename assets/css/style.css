@@ -77,9 +77,15 @@ h1 {
 }
 
 p {
-    line-height: 1.5rem;
     font-size: 1.2rem;
+    line-height: 1.5rem;
     /* letter-spacing: 1px; */
+    color: var(--on-background);
+}
+
+section>h2 {
+    text-align: center;
+    border-bottom: 1px solid var(--inverse-surface);
 }
 
 
@@ -87,14 +93,6 @@ a {
     outline: 0;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.underline {
-    border-bottom: 1px solid var(--inverse-surface);
 }
 
 
