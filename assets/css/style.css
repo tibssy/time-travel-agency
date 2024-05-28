@@ -481,20 +481,25 @@ input[type="radio"] {
     max-width: 800px;
 }
 
-.form-group {
+.booking-form-group,
+.contact-form-group {
     margin-bottom: 15px;
 }
 
-.form-group label {
+.booking-form-group label,
+.contact-form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: var(--on-primary-container);
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.booking-form-group input,
+.contact-form-group input,
+.booking-form-group select,
+.contact-form-group select,
+.booking-form-group textarea,
+.contact-form-group textarea {
     width: 100%;
     padding: 10px;
     background-color: var(--background-transparent);
@@ -504,13 +509,17 @@ input[type="radio"] {
     box-sizing: border-box;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.booking-form-group input:focus,
+.contact-form-group input:focus,
+.booking-form-group select:focus,
+.contact-form-group select:focus,
+.booking-form-group textarea:focus,
+.contact-form-group textarea:focus {
     outline: 1px solid var(--on-primary-container);
 }
 
-.form-group textarea {
+.booking-form-group textarea,
+.contact-form-group textarea {
     resize: vertical;
     height: 100px;
 }
@@ -622,6 +631,12 @@ button:hover {
 
 #contact-map {
     width: 100%;
+}
+
+#contact-form {
+    width: 90%;
+    align-items: center;
+    margin: 20px auto;
 }
 
 
