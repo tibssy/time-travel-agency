@@ -84,9 +84,16 @@ p {
 }
 
 section>h2 {
+    font-size: 200%;
     text-align: center;
+    margin-bottom: 25px;
     border-bottom: 1px solid var(--inverse-surface);
 }
+
+/* section>h2 {
+    margin-bottom: 25px;
+    font-size: 200%;
+} */
 
 
 a {
@@ -367,10 +374,6 @@ main {
     margin: 15px 0;
 }
 
-section>h2 {
-    margin-bottom: 25px;
-    font-size: 200%;
-}
 
 article>p {
     margin-top: 5px;
