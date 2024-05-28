@@ -626,6 +626,7 @@ button:hover {
         top: 0;
     }
 
+    header::before,
     header {
         height: 56px;
     }
