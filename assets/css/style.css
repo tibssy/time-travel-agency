@@ -559,7 +559,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
 }
@@ -575,7 +575,8 @@ main {
     box-shadow: var(--box-shadow-normal);
 }
 
-.review-card img {
+.review-card img,
+#user-photos img {
     width: 100%;
     height: auto;
     display: block;
@@ -594,11 +595,8 @@ main {
 
 
 #user-photos img {
-    width: 100%;
     max-width: 600px;
-    height: auto;
     overflow: hidden;
-    /* display: block; */
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
 }
@@ -741,8 +739,7 @@ main {
 
     .review-card,
     #user-photos img {
-        max-width: 300px;
-        flex: 0 0 45%;
+        flex: 0 0 46%;
     }
 }
 
@@ -817,9 +814,6 @@ main {
         transition: 0.5s;
     }
 
-    /* #review-main {
-        padding: 40px;
-    } */
 
 
     #booking-main {
