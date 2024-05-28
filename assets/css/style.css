@@ -445,7 +445,7 @@ input[type="radio"] {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: var(--on-secondary);
+    background-color: var(--primary-container);
     border-radius: var(--border-radius-large);
     padding: 10px;
     box-shadow: var(--box-shadow-normal);
@@ -558,7 +558,7 @@ button:hover {
     max-width: 400px;
     justify-content: space-around;
     overflow: hidden;
-    background-color: var(--on-secondary);
+    background-color: var(--primary-container);
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
 }
