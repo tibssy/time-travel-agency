@@ -144,20 +144,21 @@ header a {
 
 nav {
     position: absolute;
+    width: 96%;
+    height: fit-content;
+    top: -400%;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    padding: 0 0.5rem;
     background-color: var(--background-transparent);
     backdrop-filter: blur(12px);
     filter: opacity(0);
     scale: 0.6;
-    width: 96%;
-    height: fit-content;
-    padding: 0 0.5rem;
-    top: -400%;
-    box-shadow: var(--box-shadow-large);
-    overflow: hidden;
     transition: 0.4s;
-    margin: 10px auto;
-    border-radius: var(--border-radius-large);
     z-index: -2;
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--box-shadow-large);
 }
 
 /* Nav toggle */
