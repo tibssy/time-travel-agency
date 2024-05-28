@@ -289,6 +289,12 @@ main {
     margin: 20px auto;
 }
 
+#review,
+#photo {
+    width: 90%;
+    margin: 20px auto;
+}
+
 
 /* Main -> Hero */
 #hero_image_container {
@@ -547,11 +553,7 @@ main {
 
 
 
-/* Review Page Content */
-#review-main {
-    padding: 10px 20px;
-}
-
+/* Main -> Review */
 #user-review,
 #user-photos {
     display: flex;
@@ -565,7 +567,7 @@ main {
 .review-card {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 600px;
     justify-content: space-around;
     overflow: hidden;
     background-color: var(--primary-container);
@@ -584,22 +586,16 @@ main {
 }
 
 .card-content .username {
-    font-size: 120%;
+    font-size: 150%;
     color: var(--on-surface);
     margin-bottom: 6px;
     border-bottom: 1px solid var(--inverse-surface);
-    font-weight: bold;
 }
 
-.card-content p {
-    font-size: 16px;
-    color: var(--on-surface);
-    line-height: 1.5;
-}
 
 #user-photos img {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
     display: block;
     border-radius: var(--border-radius-large);
@@ -743,8 +739,9 @@ main {
         flex-wrap: wrap;
     }
 
-    .review-card {
-        flex: 0 0 48%;
+    .review-card,
+    #user-photos img {
+        flex: 0 0 46%;
     }
 }
 
@@ -770,6 +767,8 @@ main {
     #hero_image_container {
         height: 600px;
     }
+
+
 
     #introduction,
     #guide {
@@ -817,9 +816,9 @@ main {
         transition: 0.5s;
     }
 
-    #review-main {
+    /* #review-main {
         padding: 40px;
-    }
+    } */
 
 
     #booking-main {
@@ -836,6 +835,11 @@ main {
     }
 
     .card {
+        flex: 0 0 30%;
+    }
+
+    .review-card,
+    #user-photos img {
         flex: 0 0 30%;
     }
 }
