@@ -94,6 +94,23 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
+article>p {
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+article>ol {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0 25px;
+}
+
+article li {
+    margin: 10px 0;
+}
+
+
+
 
 /* Form */
 form label {
@@ -127,6 +144,9 @@ form textarea {
     height: 100px;
 }
 
+input[type="radio"] {
+    display: none;
+}
 
 
 
@@ -235,27 +255,6 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- Main ---------- */
 main {
     flex: 1 0 auto;
@@ -265,7 +264,7 @@ main {
 }
 
 
-/* Hero */
+/* Main -> Hero */
 #hero_image_container {
     position: relative;
     width: 100%;
@@ -358,7 +357,7 @@ main {
     }
 }
 
-/* Hero cover text */
+/* Main -> Hero -> Cover Text */
 #hero-cover-text {
     position: absolute;
     background: var(--background-transparent);
@@ -372,7 +371,7 @@ main {
 }
 
 
-/* Main Page Content */
+/* Main -> Introduction + Destenations + Guide */
 #introduction,
 #destenations,
 #guide,
@@ -382,27 +381,6 @@ main {
     margin: 40px auto;
 }
 
-#introduction article,
-#destenations article {
-    margin: 15px 0;
-}
-
-
-article>p {
-    margin-top: 5px;
-    padding: 0 5px;
-}
-
-article>ol {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding: 0 25px;
-}
-
-article li {
-    margin: 10px 0;
-}
-
 #intro_video {
     position: relative;
     width: 100%;
@@ -410,8 +388,17 @@ article li {
     box-shadow: var(--box-shadow-normal);
 }
 
+#introduction article,
+#destenations article {
+    margin: 15px 0;
+}
 
-/* Carousel */
+.destenation-text p {
+    margin-bottom: 10px;
+}
+
+
+/* Main -> Destenations -> Carousel */
 .carousel-container {
     display: flex;
     flex-direction: column;
@@ -421,11 +408,6 @@ article li {
     width: 100%;
     margin-top: 15px;
     margin-bottom: -10px;
-}
-
-
-.destenation-text p {
-    margin-bottom: 10px;
 }
 
 .carousel {
@@ -483,10 +465,6 @@ article li {
     transition: 0.5s;
 }
 
-input[type="radio"] {
-    display: none;
-}
-
 #past1:checked~.carousel-viewport,
 #future1:checked~.carousel-viewport {
     transform: translateX(0%);
@@ -507,7 +485,7 @@ input[type="radio"] {
     transform: translateX(-75%);
 }
 
-/* Testimonial */
+/* Main -> Testimonial */
 #testimonial>div {
     display: flex;
     flex-direction: column;
