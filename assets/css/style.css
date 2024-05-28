@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Freeman&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Asterisk wildcard selector to override default styles added by the browser */
+/* ---------- Global ---------- */
 * {
     padding: 0;
     margin: 0;
@@ -39,9 +39,6 @@
     --inverse-surface: #e1e3e0;
     --inverse-on-surface: #2e312f;
     --inverse-primary: #006b55;
-
-
-
 
     /* Other variables */
     --border-radius-large: 6px;
@@ -89,11 +86,6 @@ section>h2 {
     margin-bottom: 25px;
     border-bottom: 1px solid var(--inverse-surface);
 }
-
-/* section>h2 {
-    margin-bottom: 25px;
-    font-size: 200%;
-} */
 
 
 a {
@@ -151,7 +143,7 @@ form textarea {
 
 
 
-/* Header */
+/* ---------- Header ---------- */
 header::before,
 header {
     position: fixed;
@@ -189,24 +181,8 @@ header a {
     margin-right: 2px;
 }
 
-#menu {
-    font-size: 110%;
-    letter-spacing: 2px;
-    list-style-type: none;
-}
 
-#menu>li {
-    margin: 0.5rem 0rem;
-    padding: 0.2rem 1.8rem;
-}
-
-.active {
-    background-color: var(--primary);
-    color: var(--inverse-on-surface);
-    border-radius: var(--border-radius-normal);
-    box-shadow: var(--box-shadow-normal);
-}
-
+/* Header -> Navigation */
 nav {
     position: absolute;
     width: 96%;
@@ -226,13 +202,6 @@ nav {
     box-shadow: var(--box-shadow-large);
 }
 
-/* Nav toggle */
-#nav-toggle:checked~nav {
-    filter: opacity(100%);
-    scale: 1;
-    top: 100%;
-}
-
 #nav-toggle {
     display: none;
 }
@@ -241,9 +210,53 @@ nav {
     font-size: 2rem;
 }
 
+#nav-toggle:checked~nav {
+    filter: opacity(100%);
+    scale: 1;
+    top: 100%;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin: 0.5rem 0rem;
+    padding: 0.2rem 1.8rem;
+}
+
+.active {
+    background-color: var(--primary);
+    color: var(--inverse-on-surface);
+    border-radius: var(--border-radius-normal);
+    box-shadow: var(--box-shadow-normal);
+}
 
 
-/* Main content */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- Main ---------- */
 main {
     flex: 1 0 auto;
     margin-top: 46px;
