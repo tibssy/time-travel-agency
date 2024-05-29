@@ -108,7 +108,9 @@ article>ol {
 }
 
 article li {
-    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
 }
 
 iframe {
@@ -723,24 +725,14 @@ main {
         height: 600px;
     }
 
-
     #introduction,
     #destenations,
     #guide,
-    #testimonial,
-    #booking {
+    #testimonial {
         width: 90%;
         max-width: 1400px;
         margin: 20px auto;
     }
-
-
-
-
-    /* #destenations {
-        width: 90%;
-        max-width: none;
-    } */
 
     #destenation-container>div {
         display: flex;
