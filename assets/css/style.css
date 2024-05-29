@@ -333,19 +333,59 @@ main {
 }
 
 @keyframes initialFade {
-    0% { opacity: 1; transform: scale(1); }
-    0%, 5% { filter: sepia(100%); }
-    5%, 25% { opacity: 1; }
-    25%, 30% { filter: sepia(0%); transform: scale(1.2); }
-    30%, 100% { opacity: 0; }
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    0%,
+    5% {
+        filter: sepia(100%);
+    }
+
+    5%,
+    25% {
+        opacity: 1;
+    }
+
+    25%,
+    30% {
+        filter: sepia(0%);
+        transform: scale(1.2);
+    }
+
+    30%,
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fade {
-    0% { opacity: 0; transform: scale(1); }
-    0%, 5% { filter: sepia(100%); }
-    5%, 25% { opacity: 1; }
-    25%, 30% { filter: sepia(0%); transform: scale(1.2); }
-    30%, 100% { opacity: 0; }
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    0%,
+    5% {
+        filter: sepia(100%);
+    }
+
+    5%,
+    25% {
+        opacity: 1;
+    }
+
+    25%,
+    30% {
+        filter: sepia(0%);
+        transform: scale(1.2);
+    }
+
+    30%,
+    100% {
+        opacity: 0;
+    }
 }
 
 /* Main -> Hero -> Cover Text */
@@ -400,7 +440,7 @@ main {
 
 .carousel-viewport {
     display: flex;
-    width: 400%;
+    width: 300%;
     transition: transform 0.5s ease;
 }
 
@@ -427,7 +467,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 90%;
+    font-weight: 600;
+    /* font-size: 90%; */
     background-color: var(--background-transparent);
     backdrop-filter: blur(12px);
     flex: 1;
@@ -451,18 +492,18 @@ main {
 
 #past2:checked~.carousel-viewport,
 #future2:checked~.carousel-viewport {
-    transform: translateX(-25%);
+    transform: translateX(-33.33%);
 }
 
 #past3:checked~.carousel-viewport,
 #future3:checked~.carousel-viewport {
-    transform: translateX(-50%);
+    transform: translateX(-66.66%);
 }
 
-#past4:checked~.carousel-viewport,
+/* #past4:checked~.carousel-viewport,
 #future4:checked~.carousel-viewport {
     transform: translateX(-75%);
-}
+} */
 
 /* Main -> Testimonial */
 #testimonial>div {
