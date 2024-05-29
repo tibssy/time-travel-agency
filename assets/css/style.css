@@ -318,75 +318,31 @@ main {
 }
 
 #img_2 {
-    animation-delay: 24s;
+    animation-delay: 30s;
 }
 
 #img_3 {
-    animation-delay: 48s;
+    animation-delay: 60s;
 }
 
 #img_4 {
-    animation-delay: 72s;
-}
-
-#img_5 {
-    animation-delay: 96s;
+    animation-delay: 90s;
 }
 
 @keyframes initialFade {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    0%,
-    5% {
-        filter: sepia(100%);
-    }
-
-    5%,
-    20% {
-        opacity: 1;
-    }
-
-    20%,
-    25% {
-        filter: sepia(0%);
-        transform: scale(1.2);
-    }
-
-    25%,
-    100% {
-        opacity: 0;
-    }
+    0% { opacity: 1; transform: scale(1); }
+    0%, 5% { filter: sepia(100%); }
+    5%, 25% { opacity: 1; }
+    25%, 30% { filter: sepia(0%); transform: scale(1.2); }
+    30%, 100% { opacity: 0; }
 }
 
 @keyframes fade {
-    0% {
-        opacity: 0;
-        transform: scale(1);
-    }
-
-    0%,
-    5% {
-        filter: sepia(100%);
-    }
-
-    5%,
-    20% {
-        opacity: 1;
-    }
-
-    20%,
-    25% {
-        filter: sepia(0%);
-        transform: scale(1.2);
-    }
-
-    25%,
-    100% {
-        opacity: 0;
-    }
+    0% { opacity: 0; transform: scale(1); }
+    0%, 5% { filter: sepia(100%); }
+    5%, 25% { opacity: 1; }
+    25%, 30% { filter: sepia(0%); transform: scale(1.2); }
+    30%, 100% { opacity: 0; }
 }
 
 /* Main -> Hero -> Cover Text */
