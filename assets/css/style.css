@@ -494,7 +494,7 @@ main {
 
 /* Main -> Booking */
 #booking-main {
-    background: url("../images/time_machine_1920x1080.webp") no-repeat center center / cover;
+    background: url("../images/time-machine-1920x1080.webp") no-repeat center center / cover;
 }
 
 #booking {
@@ -773,7 +773,7 @@ main {
 
 
     #booking-main {
-        background: url("../images/time_machine_3072x1728.webp") no-repeat center center / cover;
+        background: url("../images/time-machine-3072x1728.webp") no-repeat center center / cover;
     }
 }
 
