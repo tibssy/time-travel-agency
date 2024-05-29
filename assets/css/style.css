@@ -308,17 +308,25 @@ main {
     overflow: hidden;
 }
 
+#hero-image-container div {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .fade {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
     object-fit: cover;
-    animation: fade 90s infinite;
+    animation: fade 120s infinite;
 }
 
 #img-1 {
-    animation: initialFade 90s infinite;
+    animation: initialFade 120s infinite;
 }
 
 #img-2 {
@@ -327,6 +335,10 @@ main {
 
 #img-3 {
     animation-delay: 60s;
+}
+
+#img-4 {
+    animation-delay: 90s;
 }
 
 
@@ -342,17 +354,17 @@ main {
     }
 
     5%,
-    33.33% {
+    25% {
         opacity: 1;
     }
 
-    33.3%,
-    38.33% {
+    25%,
+    30% {
         filter: sepia(0%);
         transform: scale(1.2);
     }
 
-    38.33%,
+    30%,
     100% {
         opacity: 0;
     }
@@ -370,17 +382,17 @@ main {
     }
 
     5%,
-    33.33% {
+    25% {
         opacity: 1;
     }
 
-    33.33%,
-    38.33% {
+    25%,
+    30% {
         filter: sepia(0%);
         transform: scale(1.2);
     }
 
-    38.33%,
+    30%,
     100% {
         opacity: 0;
     }
@@ -497,11 +509,6 @@ main {
 #future3:checked~.carousel-viewport {
     transform: translateX(-66.66%);
 }
-
-/* #past4:checked~.carousel-viewport,
-#future4:checked~.carousel-viewport {
-    transform: translateX(-75%);
-} */
 
 /* Main -> Testimonial */
 #testimonial>div {
@@ -741,6 +748,24 @@ main {
     }
 }
 
+@media screen and (max-width: 991px) {
+    #img-1 {
+        background-image: url("../images/hero/new/hero-slide-1000x400-1.webp");
+    }
+
+    #img-2 {
+        background-image: url("../images/hero/new/hero-slide-1000x400-2.webp");
+    }
+
+    #img-3 {
+        background-image: url("../images/hero/new/hero-slide-1000x400-3.webp");
+    }
+
+    #img-4 {
+        background-image: url("../images/hero/new/hero-slide-1000x400-4.webp");
+    }
+}
+
 /* Large devices (laptops and desktops, 992px) */
 @media screen and (min-width: 992px) {
 
@@ -762,6 +787,22 @@ main {
 
     #hero-image-container {
         height: 600px;
+    }
+
+    #img-1 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-1.webp");
+    }
+
+    #img-2 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-2.webp");
+    }
+
+    #img-3 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-3.webp");
+    }
+
+    #img-4 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-4.webp");
     }
 
     #introduction,
