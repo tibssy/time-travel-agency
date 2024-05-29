@@ -313,11 +313,11 @@ main {
     height: 100%;
     opacity: 0;
     object-fit: cover;
-    animation: fade 120s infinite;
+    animation: fade 90s infinite;
 }
 
 #img_1 {
-    animation: initialFade 120s infinite;
+    animation: initialFade 90s infinite;
 }
 
 #img_2 {
@@ -328,9 +328,6 @@ main {
     animation-delay: 60s;
 }
 
-#img_4 {
-    animation-delay: 90s;
-}
 
 @keyframes initialFade {
     0% {
@@ -344,17 +341,17 @@ main {
     }
 
     5%,
-    25% {
+    33.33% {
         opacity: 1;
     }
 
-    25%,
-    30% {
+    33.3%,
+    38.33% {
         filter: sepia(0%);
         transform: scale(1.2);
     }
 
-    30%,
+    38.33%,
     100% {
         opacity: 0;
     }
@@ -372,17 +369,17 @@ main {
     }
 
     5%,
-    25% {
+    33.33% {
         opacity: 1;
     }
 
-    25%,
-    30% {
+    33.33%,
+    38.33% {
         filter: sepia(0%);
         transform: scale(1.2);
     }
 
-    30%,
+    38.33%,
     100% {
         opacity: 0;
     }
@@ -468,7 +465,6 @@ main {
     align-items: center;
     justify-content: center;
     font-weight: 600;
-    /* font-size: 90%; */
     background-color: var(--background-transparent);
     backdrop-filter: blur(12px);
     flex: 1;
