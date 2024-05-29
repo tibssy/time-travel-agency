@@ -56,6 +56,7 @@ body {
     color: var(--on-background);
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 360;
+    text-align: justify;
     background-color: var(--background);
 }
 
@@ -723,16 +724,23 @@ main {
     }
 
 
-
     #introduction,
-    #guide {
-        max-width: 900px;
+    #destenations,
+    #guide,
+    #testimonial,
+    #booking {
+        width: 90%;
+        max-width: 1400px;
+        margin: 20px auto;
     }
 
-    #destenations {
+
+
+
+    /* #destenations {
         width: 90%;
         max-width: none;
-    }
+    } */
 
     #destenation-container>div {
         display: flex;
