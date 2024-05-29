@@ -326,18 +326,22 @@ main {
 }
 
 #img-1 {
+    background-image: url("../images/hero/new/hero-slide-1000x400-1.webp");
     animation: initialFade 120s infinite;
 }
 
 #img-2 {
+    background-image: url("../images/hero/new/hero-slide-1000x400-2.webp");
     animation-delay: 30s;
 }
 
 #img-3 {
+    background-image: url("../images/hero/new/hero-slide-1000x400-3.webp");
     animation-delay: 60s;
 }
 
 #img-4 {
+    background-image: url("../images/hero/new/hero-slide-1000x400-4.webp");
     animation-delay: 90s;
 }
 
@@ -748,24 +752,6 @@ main {
     }
 }
 
-@media screen and (max-width: 991px) {
-    #img-1 {
-        background-image: url("../images/hero/new/hero-slide-1000x400-1.webp");
-    }
-
-    #img-2 {
-        background-image: url("../images/hero/new/hero-slide-1000x400-2.webp");
-    }
-
-    #img-3 {
-        background-image: url("../images/hero/new/hero-slide-1000x400-3.webp");
-    }
-
-    #img-4 {
-        background-image: url("../images/hero/new/hero-slide-1000x400-4.webp");
-    }
-}
-
 /* Large devices (laptops and desktops, 992px) */
 @media screen and (min-width: 992px) {
 
@@ -789,7 +775,7 @@ main {
         height: 600px;
     }
 
-    #img-1 {
+    /* #img-1 {
         background-image: url("../images/hero/new/hero-slide-1920x768-1.webp");
     }
 
@@ -803,7 +789,7 @@ main {
 
     #img-4 {
         background-image: url("../images/hero/new/hero-slide-1920x768-4.webp");
-    }
+    } */
 
     #introduction,
     #destenations,
@@ -859,6 +845,22 @@ main {
 
 /* Extra Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
+
+    #img-1 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-1.webp");
+    }
+
+    #img-2 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-2.webp");
+    }
+
+    #img-3 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-3.webp");
+    }
+
+    #img-4 {
+        background-image: url("../images/hero/new/hero-slide-1920x768-4.webp");
+    }
 
     #introduction,
     #guide {
