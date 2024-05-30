@@ -241,7 +241,7 @@ nav {
     backdrop-filter: blur(12px);
     filter: opacity(0);
     scale: 0.6;
-    transition: 0.5s;
+    transition: 0.3s;
     z-index: -2;
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-large);
