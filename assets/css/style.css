@@ -270,7 +270,10 @@ main {
 #destenations,
 #guide,
 #testimonial,
-#booking {
+#booking,
+#contact-details,
+#contact-map,
+#contact-form {
     width: 90%;
     max-width: 600px;
     margin: 30px auto;
@@ -580,28 +583,26 @@ main {
     border-bottom: 1px solid var(--on-primary-container);
 }
 
-
 .booking-form-group,
 .contact-form-group {
     margin-bottom: 15px;
 }
 
-/* Contact Page Content */
-#contact-info {
+/* Main -> Contact */
+#contact-main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 90%;
-    align-items: center;
-    margin: 20px auto;
 }
 
-.contact-details {
+#contact-details {
     text-align: center;
+}
+
+#contact-details h2 {
     margin-bottom: 20px;
 }
 
-.contact-details ul {
+#contact-details ul {
     list-style: none;
     padding: 0;
 }
@@ -610,15 +611,20 @@ main {
     margin-bottom: 10px;
 }
 
-#contact-map {
-    width: 100%;
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
+#contact-map,
 #contact-form {
-    width: 90%;
-    align-items: center;
-    margin: 20px auto;
+    margin: 0;
 }
+
 
 /* Footer */
 #social-networks {
@@ -817,5 +823,14 @@ main {
     .review-card,
     #user-photos img {
         flex: 0 0 30%;
+    }
+
+    #contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #contact div {
+        flex: 0 0 46%;
     }
 }
