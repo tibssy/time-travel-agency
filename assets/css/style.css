@@ -82,7 +82,8 @@ p {
 section>h2 {
     font-size: 200%;
     text-align: center;
-    margin-bottom: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
     border-bottom: 1px solid var(--inverse-surface);
 }
 
@@ -272,13 +273,13 @@ main {
 #booking {
     width: 90%;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 #review,
 #photo {
     width: 90%;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 /* Main -> Hero */
@@ -574,6 +575,12 @@ main {
     padding: 20px;
 }
 
+#booking>h2 {
+    color: var(--on-primary-container);
+    border-bottom: 1px solid var(--on-primary-container);
+}
+
+
 .booking-form-group,
 .contact-form-group {
     margin-bottom: 15px;
@@ -742,7 +749,12 @@ main {
     #testimonial {
         width: 90%;
         max-width: 1400px;
-        margin: 20px auto;
+        margin-bottom: 40px;
+    }
+
+    #review,
+    #photo {
+        margin-bottom: 40px;
     }
 
     #destenation-container>div {
