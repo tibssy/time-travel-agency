@@ -115,6 +115,7 @@ article li {
 iframe {
     width: 100%;
     height: 400px;
+    filter: grayscale(100%) invert(92%) contrast(93%);
     border-radius: var(--border-radius-normal);
 }
 
