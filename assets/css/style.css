@@ -176,6 +176,11 @@ input[type="radio"] {
     display: none;
 }
 
+input[type="date"],
+input[type="number"] {
+    color-scheme: dark;
+}
+
 
 /* ---------- Header ---------- */
 header::before,
