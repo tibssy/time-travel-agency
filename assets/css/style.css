@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto+Condensed:wght@100..900&display=swap');
 
 /* ---------- Global ---------- */
 * {
@@ -81,7 +81,7 @@ p {
 }
 
 section>h2 {
-    font-size: 200%;
+    font-size: 220%;
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 30px;
@@ -143,7 +143,7 @@ button:hover {
 form label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--on-primary-container);
 }
 
@@ -444,7 +444,7 @@ main {
 .carousel-controls {
     position: relative;
     display: flex;
-    bottom: 35px;
+    bottom: 30px;
     justify-content: space-between;
     width: 100%;
 }
@@ -459,7 +459,7 @@ main {
     backdrop-filter: blur(12px);
     flex: 1;
     margin: auto 3px;
-    height: 30px;
+    height: 25px;
     cursor: pointer;
     border-radius: var(--border-radius-normal);
     box-shadow: var(--box-shadow-normal);
