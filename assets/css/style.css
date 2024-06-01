@@ -638,6 +638,10 @@ main {
     box-shadow: var(--box-shadow-large-inv);
 }
 
+#contact-details a {
+    color: var(--on-primary-container);
+}
+
 
 /* Footer */
 #social-networks {
