@@ -45,6 +45,7 @@
     --border-radius-normal: 4px;
     --box-shadow-normal: 0 2px 4px var(--shadow);
     --box-shadow-large: 0 4px 8px var(--shadow);
+    --box-shadow-large-inv: 0 4px 8px #ffffff;
 }
 
 /* Body */
@@ -114,10 +115,12 @@ article li {
 /* iframe */
 iframe {
     width: 100%;
-    height: 400px;
-    filter: grayscale(100%) invert(92%) contrast(93%);
+    height: 420px;
+    filter: sepia(70%) invert(100%) hue-rotate(-70deg) brightness(200%) contrast(80%);
     border-radius: var(--border-radius-normal);
 }
+
+
 
 /* Button */
 button {
@@ -584,6 +587,10 @@ main {
     border-bottom: 1px solid var(--on-primary-container);
 }
 
+#booking iframe {
+    margin-bottom: 10px;
+}
+
 .booking-form-group,
 .contact-form-group {
     margin-bottom: 15px;
@@ -624,6 +631,10 @@ main {
 #contact-map,
 #contact-form {
     margin: 0;
+}
+
+#contact-map>iframe {
+    box-shadow: var(--box-shadow-large-inv);
 }
 
 
