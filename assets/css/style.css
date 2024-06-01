@@ -385,9 +385,8 @@ main {
     position: absolute;
     background: var(--background-transparent);
     backdrop-filter: blur(12px);
-    top: 46px;
-    right: 0;
-    margin: 20px;
+    top: 360px;
+    left: 10px;
     padding: 10px;
     border-radius: var(--border-radius-large);
     box-shadow: var(--box-shadow-normal);
@@ -720,8 +719,12 @@ main {
         margin-top: 56px;
     }
 
+    /* Main -> Hero -> Cover Text */
     #hero-cover-text {
         top: 56px;
+        left: auto;
+        right: 0;
+        margin: 20px;
     }
 
     .carousel {
@@ -769,6 +772,10 @@ main {
     /* Main */
     #hero-image-container {
         height: 600px;
+    }
+
+    section>h2 {
+        font-size: 250%;
     }
 
     #introduction,
