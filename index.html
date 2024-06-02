@@ -42,15 +42,24 @@
     <main>
         <section id="hero">
             <div id="hero-image-container">
-                <img id="img-1" class="fade" src="assets/images/hero/hero-slide-1.webp"
-                    srcset="assets/images/hero/hero-slide-1-480w.webp 480w, assets/images/hero/hero-slide-1-800w.webp 800w, assets/images/hero/hero-slide-1-1920w.webp 1920w"
-                    sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px" alt="hero slide 1">
-                <img id="img-2" class="fade" src="assets/images/hero/hero-slide-2.webp"
-                    srcset="assets/images/hero/hero-slide-2-480w.webp 480w, assets/images/hero/hero-slide-2-800w.webp 800w, assets/images/hero/hero-slide-2-1920w.webp 1920w"
-                    sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px" alt="hero slide 2">
-                <img id="img-3" class="fade" src="assets/images/hero/hero-slide-3.webp"
-                    srcset="assets/images/hero/hero-slide-3-480w.webp 480w, assets/images/hero/hero-slide-3-800w.webp 800w, assets/images/hero/hero-slide-3-1920w.webp 1920w"
-                    sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px" alt="hero slide 3">
+                <picture>
+                    <source srcset="assets/images/hero/hero-slide-1-480w.webp" media="(max-width: 600px)">
+                    <source srcset="assets/images/hero/hero-slide-1-800w.webp" media="(max-width: 1200px)">
+                    <source srcset="assets/images/hero/hero-slide-1-1920w.webp">
+                    <img id="img-1" class="fade" src="assets/images/hero/hero-slide-1.webp" alt="hero slide 1">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/hero/hero-slide-2-480w.webp" media="(max-width: 600px)">
+                    <source srcset="assets/images/hero/hero-slide-2-800w.webp" media="(max-width: 1200px)">
+                    <source srcset="assets/images/hero/hero-slide-2-1920w.webp">
+                    <img id="img-2" class="fade" src="assets/images/hero/hero-slide-2.webp" alt="hero slide 2">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/hero/hero-slide-3-480w.webp" media="(max-width: 600px)">
+                    <source srcset="assets/images/hero/hero-slide-3-800w.webp" media="(max-width: 1200px)">
+                    <source srcset="assets/images/hero/hero-slide-3-1920w.webp">
+                    <img id="img-3" class="fade" src="assets/images/hero/hero-slide-3.webp" alt="hero slide 3">
+                </picture>
             </div>
             <div id="hero-cover-text">
                 <h2>ChronoQuest Travel</h2>
