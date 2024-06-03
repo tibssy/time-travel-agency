@@ -19,6 +19,7 @@ This project includes a detailed main page with information on top destinations,
 - [Features](#features)
 - [Design](#design)
 - [Testing](#testing)
+- [Bugs](#bugs)
 
 ## User Experience
 
@@ -161,3 +162,43 @@ The CSS code was validated using the W3C CSS Validation Service to ensure there 
 - **CSS Validation Warnings:**
 
   ![css-val-warnings](https://github.com/tibssy/time-travel-agency/assets/72749248/5f04fa90-2c84-4452-9eb1-2d975f91d223)
+
+
+### Manual Testing
+
+In addition to automated testing, extensive manual testing was conducted to ensure that the site functions correctly across different browsers and devices. This included checking:
+
+- Responsiveness on various screen sizes (desktop, tablet, and mobile).
+- Functionality of navigation links and buttons.
+- Form submission and validation.
+- Image loading and aspect ratios.
+- Video playback and controls.
+
+ChronoQuest was manually tested across various devices and operating systems to ensure compatibility and responsiveness.
+
+#### Operating Systems and Browsers
+
+- **Desktop:**
+  - **ArchLinux Kernel 6.9.3-zen1-1-zen:**
+    - Firefox version 126.0.1 (64-bit)
+    - Brave version 1.65.132 Chromium: 124.0.6367.202 (Official Build) (64-bit)
+
+- **Phone:**
+  - **Android 10 Kernel 4.14.116:**
+    - Firefox version 126.0.1
+    - Chrome version 125.0.6422.147
+
+- **Tablet:**
+  - **Android 13 Kernel 6.1.73:**
+    - Firefox version 126.0
+    - Chrome version 124.0.6367.179
+
+No major issues were found during testing, ensuring a consistent and smooth user experience across all supported browsers.
+
+## Bugs
+
+### Known Issues
+
+- **Video Playback Bug on Android 10 with Firefox Version 126.0.1:**
+  - Issue: On Android 10 with Firefox version 126.0.1, the video thumbnail loads correctly, but during playback, only the top left quarter of the video is visible.
+  - Status: This issue is currently under investigation. Potential fixes might involve adjusting the video embed settings or providing alternative video formats to ensure compatibility across all devices and browsers.
