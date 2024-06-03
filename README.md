@@ -20,6 +20,7 @@ This project includes a detailed main page with information on top destinations,
 - [Design](#design)
 - [Testing](#testing)
 - [Bugs](#bugs)
+- [Tools](#tools)
 
 ## User Experience
 
@@ -202,3 +203,24 @@ No major issues were found during testing, ensuring a consistent and smooth user
 - **Video Playback Bug on Android 10 with Firefox Version 126.0.1:**
   - Issue: On Android 10 with Firefox version 126.0.1, the video thumbnail loads correctly, but during playback, only the top left quarter of the video is visible.
   - Status: This issue is currently under investigation. Potential fixes might involve adjusting the video embed settings or providing alternative video formats to ensure compatibility across all devices and browsers.
+
+
+## Tools
+
+- **Image Generation**
+  - [Leonardo AI](https://app.leonardo.ai/) Used for generating high-quality images.
+- **Image Upscaling**
+  - [Upscayl Desktop](https://www.upscayl.org/) Utilized for upscaling images to higher resolutions.
+- **Image Editing and Conversion**
+  - [GIMP - GNU Image Manipulation Program](https://www.gimp.org/) Open-source tool for editing images and converting them to WebP and many other formats.
+- **Video Generation**
+  - [Invideo AI](https://invideo.io/) A powerful tool for creating videos with AI.
+  - [Haiper AI](https://haiper.ai/) Utilized for generating videos through AI technology.
+  - [PixVerse AI](https://app.pixverse.ai/) AI-driven video creation platform.
+  - [Genmo AI](https://www.genmo.ai/) AI tool for generating dynamic videos.
+- **Version Control**
+  - [GitHub](https://github.com) Used for version control and repository management.
+- **Integrated Development Environment (IDE)**
+  - Visual Studio Code on Gitpod: [Visual Studio Code](https://code.visualstudio.com/), [GitPod](https://www.gitpod.io/) Online IDE used for coding and development.
+- **Color Theme Generation**
+  - [Material You Color](https://pypi.org/project/materialyoucolor/) A Python library for generating color themes.
