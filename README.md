@@ -21,6 +21,7 @@ This project includes a detailed main page with information on top destinations,
 - [Testing](#testing)
 - [Bugs](#bugs)
 - [Tools](#tools)
+- [Conclusion](#conclusion)
 
 ## User Experience
 
@@ -218,9 +219,49 @@ No major issues were found during testing, ensuring a consistent and smooth user
   - [Haiper AI](https://haiper.ai/) Utilized for generating videos through AI technology.
   - [PixVerse AI](https://app.pixverse.ai/) AI-driven video creation platform.
   - [Genmo AI](https://www.genmo.ai/) AI tool for generating dynamic videos.
+- **Video Editing**
+  - [ShotCut](https://www.shotcut.org/) Free and Open-source cross platform video editor.
+- **Text Content Generation**
+  - [ChatGPT](https://chatgpt.com) Used for some text content such as User Review and Top Destinations.
 - **Version Control**
   - [GitHub](https://github.com) Used for version control and repository management.
 - **Integrated Development Environment (IDE)**
   - Visual Studio Code on Gitpod: [Visual Studio Code](https://code.visualstudio.com/), [GitPod](https://www.gitpod.io/) Online IDE used for coding and development.
 - **Color Theme Generation**
   - [Material You Color](https://pypi.org/project/materialyoucolor/) A Python library for generating color themes.
+- **Icons**
+  - [fontawesome](https://fontawesome.com) Used for Social Media Icons and menu toggle button.
+- **Fonts**
+  - [Google Font](https://fonts.google.com) Used Roboto and Freeman font family for this project.
+
+
+## Conclusion
+
+### Lessons Learned and Future Improvements
+
+  - **What I Learned**
+    - Time Management and Planning:
+      - Effectively breaking down the project into manageable tasks and milestones.
+      - Prioritizing features and managing time to ensure the project was completed on schedule.
+    - Front-End Development:
+      - Gained a deeper understanding of HTML, CSS.
+      - Improved skills in responsive design to ensure the website works seamlessly across different devices.
+    - Accessibility:
+      - Highlighted the significance of accessibility features for users with disabilities.
+      - Learned how to implement user-friendly navigation and intuitive UI/UX design.
+    - Tools and Technologies:
+      - Used various AI tools for image and video generation.
+      - Explored the capabilities of GitHub for version control and collaboration.
+    - Testing and Debugging:
+      - Created strong testing methods to make sure the website works well on various browsers and devices.
+      - Identified and fixed bugs efficiently, enhancing the overall user experience.
+
+  - **What I Would Do Differently**
+    - Wireframe Tools:
+      - Use wireframe tools to generate simple boilerplate codes for the basic structure of the website.
+      - This would streamline the initial development phase and provide a clear blueprint for the design and layout.
+    - Frameworks and Libraries:
+      - Use modern frameworks and libraries such as React, Angular for more efficient and scalable front-end development.
+      - Integrate CSS frameworks like Bootstrap to speed up styling and ensure consistency across the site.
+
+  Reflecting on these areas for improvement and lessons learned, I am confident that future projects will benefit significantly from this experience. Each project provides an opportunity to grow and refine skills, and I am excited to apply these for future projects.
