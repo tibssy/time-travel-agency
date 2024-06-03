@@ -68,12 +68,9 @@ As a returning visitor to ChronoQuest, I want to:
 - **Transparent Navbar:** 
   - The navbar has a transparent blur effect that turns opaque when the mouse hovers over it, enhancing user experience and visibility.
 
-![readme-navbar-1](https://github.com/tibssy/time-travel-agency/assets/72749248/196c3487-671b-44c9-8fe8-6f978f0d3470)
-
 - **Responsive Mobile Menu:**
   - On mobile devices, the menu is also transparent and blurred. It opens with a smooth animation involving scaling and opacity changes, appearing from under the navbar.
 
-![navigation-menu](https://github.com/tibssy/time-travel-agency/assets/72749248/b62aac2a-7c6d-45cf-a878-fbfcd8b91ceb)
 
 ### Hero Image
 
