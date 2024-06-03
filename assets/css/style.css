@@ -277,7 +277,7 @@ main {
 }
 
 #introduction,
-#destenations,
+#destinations,
 #guide,
 #testimonial,
 #booking,
@@ -392,7 +392,7 @@ main {
     box-shadow: var(--box-shadow-normal);
 }
 
-/* Main -> Introduction + Destenations */
+/* Main -> Introduction + Destinations */
 #intro-video {
     position: relative;
     width: 100%;
@@ -401,15 +401,15 @@ main {
 }
 
 #introduction article,
-#destenations article {
+#destinations article {
     margin: 15px 0;
 }
 
-.destenation-text p {
+.destination-text p {
     margin-bottom: 10px;
 }
 
-/* Main -> Destenations -> Carousel */
+/* Main -> Destinations -> Carousel */
 .carousel-container {
     display: flex;
     flex-direction: column;
@@ -779,7 +779,7 @@ main {
     }
 
     #introduction,
-    #destenations,
+    #destinations,
     #guide,
     #testimonial {
         width: 90%;
@@ -792,7 +792,7 @@ main {
         margin-bottom: 40px;
     }
 
-    #destenation-container>div {
+    #destination-container>div {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -811,7 +811,7 @@ main {
         width: 49%;
     }
 
-    #destenation-container article {
+    #destination-container article {
         width: 49%;
     }
 
