@@ -71,12 +71,12 @@ As a returning visitor to ChronoQuest, I want to:
 - **Transparent Navbar:** 
   - The navbar has a transparent blur effect that turns opaque when the mouse hovers over it, enhancing user experience and visibility.
 
-    ![navbar](https://github.com/tibssy/time-travel-agency/assets/72749248/55d74665-7071-4a0e-b9c3-8447c6ac6930)
+  ![navbar](https://github.com/tibssy/time-travel-agency/assets/72749248/55d74665-7071-4a0e-b9c3-8447c6ac6930)
 
 - **Responsive Mobile Menu:**
   - On mobile devices, the menu is also transparent and blurred. It opens with a smooth animation involving scaling and opacity changes, appearing from under the navbar.
 
-    ![nav-menu](https://github.com/tibssy/time-travel-agency/assets/72749248/7922d77b-d07a-4a12-98a5-ab6647624b66)
+  ![nav-menu](https://github.com/tibssy/time-travel-agency/assets/72749248/7922d77b-d07a-4a12-98a5-ab6647624b66)
 
 
 ### Hero Image
@@ -85,11 +85,11 @@ As a returning visitor to ChronoQuest, I want to:
   - The hero image section functions like a slideshow with a fading effect. Three images cycle through every 90 seconds.
   - Each image fades in over 4.5 seconds, starting with a sepia tone. Over the next 25 seconds, the image transitions to full color and scales up by 20%. After 30 seconds, the image starts to fade out as the next image begins to fade in.
 
-    ![hero-slide-1](https://github.com/tibssy/time-travel-agency/assets/72749248/f7db2add-10f4-4f4a-8f80-5c1f4899eb94)
+  ![hero-slide-1](https://github.com/tibssy/time-travel-agency/assets/72749248/f7db2add-10f4-4f4a-8f80-5c1f4899eb94)
 
-    ![hero-slide-2](https://github.com/tibssy/time-travel-agency/assets/72749248/50a1837e-695d-4d85-b466-acbc5be46d75)
+  ![hero-slide-2](https://github.com/tibssy/time-travel-agency/assets/72749248/50a1837e-695d-4d85-b466-acbc5be46d75)
 
-    ![hero-slide-3](https://github.com/tibssy/time-travel-agency/assets/72749248/d39e0c1b-582d-4c42-a136-74a159f5cb36)
+  ![hero-slide-3](https://github.com/tibssy/time-travel-agency/assets/72749248/d39e0c1b-582d-4c42-a136-74a159f5cb36)
 
 ### Company Video
 
@@ -104,7 +104,7 @@ As a returning visitor to ChronoQuest, I want to:
 - **Future Destinations:**
   - The second slide features three destinations from the future, offering a glimpse into upcoming adventures.
 
-  ![destenation-slide](https://github.com/tibssy/time-travel-agency/assets/72749248/e6f6c918-698d-4542-92dd-861c478682aa)
+![destenation-slide](https://github.com/tibssy/time-travel-agency/assets/72749248/e6f6c918-698d-4542-92dd-861c478682aa)
 
 ### Booking Page
 
@@ -145,13 +145,13 @@ The HTML code was validated using the W3C Markup Validation Service to ensure it
 
 - **HTML Validation Results:**
   
-  ![html-val-index](https://github.com/tibssy/time-travel-agency/assets/72749248/905a9090-df67-4ea9-8f46-20bfafdc64a0)
+![html-val-index](https://github.com/tibssy/time-travel-agency/assets/72749248/905a9090-df67-4ea9-8f46-20bfafdc64a0)
 
-  ![html-val-booking](https://github.com/tibssy/time-travel-agency/assets/72749248/949b2f18-f31d-4dff-afca-f918f96fb5c8)
+![html-val-booking](https://github.com/tibssy/time-travel-agency/assets/72749248/949b2f18-f31d-4dff-afca-f918f96fb5c8)
 
-  ![html-val-review](https://github.com/tibssy/time-travel-agency/assets/72749248/a01eea37-505f-4135-bb87-1b6635280a2b)
+![html-val-review](https://github.com/tibssy/time-travel-agency/assets/72749248/a01eea37-505f-4135-bb87-1b6635280a2b)
 
-  ![html-val-contact](https://github.com/tibssy/time-travel-agency/assets/72749248/d4c90a78-2e79-4fdf-b41e-7e0bc0bcd5ad)
+![html-val-contact](https://github.com/tibssy/time-travel-agency/assets/72749248/d4c90a78-2e79-4fdf-b41e-7e0bc0bcd5ad)
 
 ### CSS Validation
 
@@ -159,11 +159,13 @@ The CSS code was validated using the W3C CSS Validation Service to ensure there 
 
 - **CSS Validation Results:**
 
-  ![css-val](https://github.com/tibssy/time-travel-agency/assets/72749248/b3c776a8-b0df-4d49-af5c-21976bbd0947)
+![css-val](https://github.com/tibssy/time-travel-agency/assets/72749248/b3c776a8-b0df-4d49-af5c-21976bbd0947)
 
 - **CSS Validation Warnings:**
 
-  ![css-val-warnings](https://github.com/tibssy/time-travel-agency/assets/72749248/5f04fa90-2c84-4452-9eb1-2d975f91d223)
+Most of these warnings are related to CSS variables (custom properties) not being statically checked.
+
+![css-val-warnings](https://github.com/tibssy/time-travel-agency/assets/72749248/5f04fa90-2c84-4452-9eb1-2d975f91d223)
 
 
 ### Manual Testing
@@ -205,6 +207,44 @@ No major issues were found during testing, ensuring a consistent and smooth user
   - Issue: On Android 10 with Firefox version 126.0.1, the video thumbnail loads correctly, but during playback, only the top left quarter of the video is visible.
   - Status: This issue is currently under investigation. Potential fixes might involve adjusting the video embed settings or providing alternative video formats to ensure compatibility across all devices and browsers.
 
+### Fixed Bugs
+
+- **Backdrop Filter Issue on Chrome-Based Browsers:**
+
+  - **Issue:**
+    - When applying the backdrop-filter property to nested elements in Chrome-based browsers, specifically on the header and its child element nav, the filter effect did not render correctly.
+
+  - **Solution:**
+    - After researching, I found a solution on StackOverflow that addressed the issue of backdrop-filter on nested elements.
+    - The solution involved adjusting the CSS to ensure compatibility with Chrome-based browsers. I modified the provided solution to fit the structure of my code.
+
+      ```
+      header::before {
+          content: '';
+          backdrop-filter: blur(12px);
+          z-index: -1;
+      }
+      ```
+      ```
+      header {
+        background-color: var(--background-transparent);
+        z-index: 99;
+      }
+      ```
+
+      Then I applied backdrop-filter on header direct child element:
+
+      ```
+      nav {
+        background-color: var(--background-transparent);
+        backdrop-filter: blur(12px);
+        z-index: -2;
+      }
+      ```
+
+
+- **References:**
+  [StackOverflow](https://stackoverflow.com/questions/60997948/)
 
 ## Tools
 
@@ -253,7 +293,7 @@ No major issues were found during testing, ensuring a consistent and smooth user
       - Used various AI tools for image and video generation.
       - Explored the capabilities of GitHub for version control and collaboration.
     - Testing and Debugging:
-      - Created strong testing methods to make sure the website works well on various browsers and devices.
+      - Tested the Web site in different devices/operating systems/browsers to ensure consistent user experience.
       - Identified and fixed bugs efficiently, enhancing the overall user experience.
 
   - **What I Would Do Differently**
