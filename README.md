@@ -178,22 +178,16 @@ ChronoQuest was manually tested across various devices and operating systems to 
 
 #### Operating Systems and Browsers
 
-- **Desktop:**
+## Device and Browser Information
 
-  - **ArchLinux Kernel 6.9.3-zen1-1-zen:**
-    - Firefox version 126.0.1 (64-bit)
-    - Brave version 1.65.132 Chromium: 124.0.6367.202 (Official Build) (64-bit)
-
-- **Phone:**
-
-  - **Android 10 Kernel 4.14.116:**
-    - Firefox version 126.0.1
-    - Chrome version 125.0.6422.147
-
-- **Tablet:**
-  - **Android 13 Kernel 6.1.73:**
-    - Firefox version 126.0
-    - Chrome version 124.0.6367.179
+| **Device**  | **OS & Kernel**                   | **Browser** | **Version**                                                 | **Status**     |
+| ----------- | --------------------------------- | ----------- | ----------------------------------------------------------- | -------------- |
+| **Desktop** | ArchLinux Kernel 6.9.3-zen1-1-zen | Firefox     | 126.0.1 (64-bit)                                            | No issues      |
+|             |                                   | Brave       | 1.65.132 Chromium: 124.0.6367.202 (Official Build) (64-bit) | No issues      |
+| **Phone**   | Android 10 Kernel 4.14.116        | Firefox     | 126.0.1                                                     | trivial issues |
+|             |                                   | Chrome      | 125.0.6422.147                                              | No issues      |
+| **Tablet**  | Android 13 Kernel 6.1.73          | Firefox     | 126.0                                                       | No issues      |
+|             |                                   | Chrome      | 124.0.6367.179                                              | No issues      |
 
 No major issues were found during testing, ensuring a consistent and smooth user experience across all supported browsers.
 
