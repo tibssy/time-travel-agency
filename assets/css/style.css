@@ -39,7 +39,6 @@
     --inverse-surface: #e1e3e0;
     --inverse-on-surface: #2e312f;
     --inverse-primary: #006b55;
-
     /* Other variables */
     --border-radius-large: 6px;
     --border-radius-normal: 4px;
@@ -120,8 +119,6 @@ iframe {
     filter: sepia(70%) invert(100%) hue-rotate(-70deg) brightness(200%) contrast(80%);
     border-radius: var(--border-radius-normal);
 }
-
-
 
 /* Button */
 button {
@@ -749,6 +746,7 @@ main {
     }
 }
 
+
 /* Large devices (laptops and desktops, 992px) */
 @media screen and (min-width: 992px) {
 
@@ -834,6 +832,7 @@ main {
         background: url("../images/time-machine-3072x1728.webp") no-repeat center center / cover;
     }
 }
+
 
 /* Extra Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 1200px) {
