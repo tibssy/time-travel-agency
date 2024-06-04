@@ -74,8 +74,8 @@ h1 {
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
     color: var(--on-background);
 }
 
@@ -455,7 +455,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 0.85rem;
     font-weight: 600;
     background-color: var(--background-transparent);
     backdrop-filter: blur(12px);
@@ -518,6 +518,7 @@ main {
 /* Main -> Testimonial */
 #testimonial-container {
     align-items: center;
+    gap: 20px;
 }
 
 .testimonial-card {
@@ -537,6 +538,7 @@ main {
 
 .testimonial-card p {
     font-size: medium;
+    text-align: left;
     margin-top: 5px;
     line-height: normal;
 }
@@ -661,8 +663,28 @@ main {
 }
 
 
+/* Media query: modern mobile (768px and up) */
+@media screen and (min-width: 400px) {
+
+    /* Text */
+    .carousel-button {
+        font-size: 1rem;
+    }
+
+    .testimonial-card p {
+        text-align: justify;
+    }
+}
+
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
+    /* Text */
+    p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
 
     /* Header */
     #logo-image {
