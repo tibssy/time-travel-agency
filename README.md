@@ -110,11 +110,23 @@ As a returning visitor to ChronoQuest, I want to:
   - The booking page allows users to choose a time period, fill in their personal details, and select their desired destination.
   - Users can specify if they want to travel to a BC or AD era and input the specific year they want to visit.
 
+![booking](https://github.com/tibssy/time-travel-agency/assets/72749248/50a07e4c-52cc-4cf9-9b30-681f8664b4f6)
+
 ### User Reviews
 
 - **Dynamic Review Cards:**
   - Users can view testimonials from other travelers, complete with usernames and photos.
   - Reviews highlight the experiences and satisfaction of previous users.
+
+![review](https://github.com/tibssy/time-travel-agency/assets/72749248/b43e015b-d53b-4c70-8414-d39b7cbfd513)
+
+### Contact Page
+
+- **Responsive Design with Embeded Map**
+  - Users can ask question about company and destinations by filling up the form.
+  - Users can find the company location on the map.
+
+![contact](https://github.com/tibssy/time-travel-agency/assets/72749248/9e3f6472-a3ce-4c2e-b773-4f346b8b74d4)
 
 ## Design
 
