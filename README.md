@@ -17,7 +17,8 @@ This project includes a detailed main page with information on top destinations,
 - [Design](#design)
 - [Testing](#testing)
 - [Bugs](#bugs)
-- [Tools](#tools)
+- [Deployment](#deployment)
+- [Credits](#credits)
 - [Conclusion](#conclusion)
 
 ## User Experience
@@ -250,7 +251,32 @@ No major issues were found during testing, ensuring a consistent and smooth user
 - **References:**
   [StackOverflow](https://stackoverflow.com/questions/60997948/)
 
-## Tools
+## Deployment
+
+This section describes the process of deploying the ChronoQuest project to a hosting platform, specifically GitHub Pages.
+
+**The site was deployed to GitHub Pages. The steps to deploy are as follows:**
+
+1. **Navigate to the Settings Tab:**
+
+   - In your GitHub repository, go to the "Settings" tab.
+
+2. **Select the Source Branch:**
+
+   - Scroll down to the "Pages" section on the left-hand sidebar.
+   - From the source section drop-down menu, select the branch you want to deploy (e.g., `main` or `master`).
+
+3. **Save and Deploy:**
+   - Click "Save" after selecting the branch.
+   - Once the branch has been selected and saved, the page will automatically refresh with a detailed display to indicate the successful deployment.
+
+**The live link can be found here:**
+
+[ChronoQuest Live Site](https://tibssy.github.io/time-travel-agency)
+
+By following these steps, the ChronoQuest project is deployed and available online, allowing users to access and interact with the time travel booking system seamlessly.
+
+## Credits
 
 - **Image Generation**
   - [Leonardo AI](https://app.leonardo.ai/) Used for generating high-quality images.
